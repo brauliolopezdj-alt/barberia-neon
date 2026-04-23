@@ -348,3 +348,25 @@ footer {
     color: #25d366;
     text-shadow: 0 0 20px #25d366;
 }
+
+/* --- ESTO ARREGLA EL CELULAR (PÉGALO AL FINAL) --- */
+@media (max-width: 768px) {
+    .servicios {
+        display: flex;
+        flex-direction: column; /* Pone una tarjeta debajo de otra */
+        align-items: center;    /* Centra las tarjetas perfectamente */
+        padding: 10px;
+    }
+
+    .card {
+        width: 90%;            /* Hace que la tarjeta no choque con las orillas */
+        max-width: 350px;      /* Pero que tampoco se estire de más */
+        margin-bottom: 20px;   /* Separa una de otra */
+        box-shadow: 0 0 15px rgba(52, 152, 219, 0.5); /* Refuerza el brillo neón en móvil */
+    }
+
+    h1, h2 {
+        font-size: 2rem;       /* Ajusta el tamaño de letra para que no se amontone */
+        text-align: center;
+    }
+}
