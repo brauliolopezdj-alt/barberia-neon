@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;700&display=swap');
+
+/* Aplicamos las fuentes */
+h1, h2, .logo {
+    font-family: 'Bebas Neue', cursive;
+}
+
+p, 
+
+/* Configuración básica */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    color: white;
+    /* Creamos el borde en toda la página */
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-image-source: repeating-linear-gradient(45deg, #d91b1b, #d91b1b 10px, #fff 10px, #fff 20px, #3498db 20px, #3498db 30px, #fff 30px, #fff 40px);
+    border-image-slice: 10;
+    border-image-repeat: round;
+}
+
+/* Navegación */
+header {
+    background: #1a1a1a; /* Negro elegante */
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 5px solid #d91b1b; /* Línea roja */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #fff;
+    /* Efecto de luz LED */
+    text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #3498db, /* Brillo azul */
+        0 0 30px #3498db,
+        0 0 40px #3498db;
+    transition: 0.5s;
+}
+
+.logo span {
+    color: #fff;
+    /* Efecto LED Rojo para la segunda palabra */
+    text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #d91b1b, /* Brillo rojo */
+        0 0 30px #d91b1b,
+        0 0 40px #d91b1b;
+}
+
+/* Animación de parpadeo (como un letrero real) */
+.logo:hover {
+    text-shadow: none; /* Se apaga al pasar el mouse */
+    color: #444;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Sección Hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/corte1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* ESTILO PARA AMBOS BOTONES */
+.btn-whatsapp, .btn-cita {
+    display: inline-block;
+    padding: 15px 30px;
+    font-family: 'Bebas Neue', cursive; /* Para que la letra sea ruda */
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #000; /* Fondo negro para que resalte el borde */
+    border-radius: 8px;
+    
+    /* EL BORDE DE BARBERÍA */
+    border: 6px solid transparent;
+    border-image-source: repeating-linear-gradient(45deg, #d91b1b, #d91b1b 10px, #fff 10px, #fff 20px, #3498db 20px, #3498db 30px, #fff 30px, #fff 40px);
+    border-image-slice: 10;
+    
+    /* ANIMACIÓN */
+    transition: 0.3s;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+.btn-whatsapp:hover, .btn-cita:hover {
+    transform: scale(1.1); /* Se hace un poquito más grande */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+
+
+/* Cuadrículas (Servicios y Galería) */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.servicios-grid, .galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+
+}
+
+.precio {
+    display: block;
+    font-size: 20px;
+    color: #d91b1b;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.foto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+
+    border: 3px solid #1a1a1a;
+}
+}
+
+section h2 {
+    font-size: 42px;
+    color: #fff;
+    text-transform: uppercase;
+    /* Brillo LED Blanco/Azul para los títulos */
+    text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #3498db,
+        0 0 20px #3498db;
+    margin-bottom: 40px;
+}
+
+/* Estilo específico para los iconos dentro de los títulos */
+section h2 i {
+    margin-right: 15px;
+    color: #d91b1b; /* Icono en rojo LED */
+    text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #d91b1b,
+        0 0 20px #d91b1b;
+}
+
+/* Fondo oscuro para que el LED resalte (Opcional pero recomendado) */
+section {
+    background-color: #121212; /* Un negro muy oscuro */
+    padding: 60px 20px;
+}
+
+
+section p {
+    color: #bbb; /* Texto gris claro para que se lea en fondo oscuro */
+}
+
+section p {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Fondo general de toda la página */
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Unificamos todas las secciones a Negro Puro */
+section {
+    background-color: #000000 !important; /* El !important asegura que nada lo cambie */
+    padding: 80px 20px;
+}
+
+/* Tarjetas estilo "Black Edition" */
+.card {
+    background: #111111; /* Un gris casi negro para que se distinga del fondo */
+    color: white;
+    border: 1px solid #333; /* Un borde sutil */
+    border-top: 4px solid #3498db; /* Línea neón azul arriba */
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.2); /* Resplandor suave azul */
+    transition: 0.3s;
+}
+
+
+/* Ajuste de textos para fondo negro */
+section p {
+    color: #aaaaaa; /* Gris claro para que no canse la vista */
+}
+
+.precio {
+    color: #ff0000; /* Rojo vibrante para el precio */
+    text-shadow: 0 0 5px #ff0000;
+}
+
+/* Animación para que los colores giren */
+@keyframes girarBarber {
+    100% {
+        background-position: 50px 0;
+    }
+}
+
+/* El contorno para las fotos de la galería */
+.foto {
+    position: relative;
+    padding: 5px; /* Este es el grosor del borde */
+    background: repeating-linear-gradient(
+        45deg,
+        #d91b1b, /* Rojo */
+        #d91b1b 10px,
+        #fff 10px,   /* Blanco */
+        #fff 20px,
+        #3498db 20px, /* Azul */
+        #3498db 30px,
+        #fff 30px,   /* Blanco */
+        #fff 40px
+    );
+    background-size: 50px 50px;
+    animation: girarBarber 2s linear infinite; /* Aquí es donde ocurre la magia de giro */
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Aseguramos que la imagen esté un poco separada del borde */
+.foto img {
+    display: block;
+    border-radius: 8px;
+    border: 2px solid #000; /* Un pequeño borde negro para que resalte la foto */
+}
+
+/* El separador estilo "Corte de Navaja" */
+.separador {
+    height: 2px;
+    width: 80%;
+    margin: 0 auto;
+    background: linear-gradient(to right, transparent, #d91b1b, #fff, #3498db, transparent);
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+    border: none;
+}
+
+.separador {
+    height: 3px;
+    border: none;
+    width: 70%;
+    margin: 40px auto; /* Esto le da espacio arriba y abajo */
+    background: linear-gradient(to right, transparent, #d91b1b, #fff, #3498db, transparent);
+}
+
+/* --- ESTILO ÚNICO DE TARJETAS (VIDRIO + HOVER) --- */
+.card {
+    background: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 4px solid #3498db; 
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+    transition: all 0.4s ease;
+    text-align: center;
+}
+
+.card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-10px);
+    border-top: 4px solid #d91b1b; /* Aquí cambia de azul a rojo al tocarlo */
+}
+
+/* ESTILO DEL FOOTER Y REDES */
+footer {
+    background-color: #000;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 2px solid #333;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    font-size: 30px; /* Tamaño del icono */
+    margin: 0 15px;
+    color: #fff;
+    transition: 0.3s;
+    /* Brillo LED blanco suave por defecto */
+    text-shadow: 0 0 5px #fff;
+}
+
+/* Colores de marca al pasar el mouse (Hover) */
+.redes-sociales a:hover .fa-facebook {
+    color: #1877f2;
+    text-shadow: 0 0 20px #1877f2;
+}
+
+.redes-sociales a:hover .fa-instagram {
+    color: #e4405f;
+    text-shadow: 0 0 20px #e4405f;
+}
+
+.redes-sociales a:hover .fa-tiktok {
+    color: #00f2ea;
+    text-shadow: 0 0 20px #00f2ea;
+}
+
+.redes-sociales a:hover .fa-whatsapp {
+    color: #25d366;
+    text-shadow: 0 0 20px #25d366;
+}
